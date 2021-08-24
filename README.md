@@ -2,7 +2,7 @@
 
 This app shows how to enable JDBC batch inserts using Hibernate and PostgreSQL.
 
-- Annotate auto-generated keys with `@GeneratedValue(strategy = GenerationType.SEQUENCE)`. Don't use `SERIAL` not `BIGSERIAL`.
+- Annotate auto-generated keys with `@GeneratedValue(strategy = GenerationType.SEQUENCE)`. Don't use `SERIAL` nor `BIGSERIAL`.
 - Set `spring.jpa.properties.hibernate.jdbc.batch_size` to appropriate value.
 - Set `reWriteBatchedInserts` to true in the JDBC URL.
 
