@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/todo?reWriteBatchedInserts=true
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: password
+  jpa:
+    database: postgresql
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 100
+    hibernate:
+      ddl-auto: create
+logging:
+  level:
+    org.hibernate.SQL: debug
